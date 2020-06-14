@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers&display=swap&subset=latin-ext");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bangers", cursive;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 66, 66);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1024px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3), 0 10px 28px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+h1.title {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 80px;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+.game div {
+  position: relative;
+  flex-basis: 150px;
+  height: 220px;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.game div.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.cadetblue {
+  background-color: cadetblue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.off {
+  background-color: #ccc;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.hidden {
+  background-color: #000;
+}
+
+.pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: center;
+  display: none;
+  letter-spacing: 4px;
+}
+
+.pop .pop-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 100px;
+}
+
+.pop .pop-score {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  font-size: 80px;
+}
+
+.pop .new-game {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  outline: none;
+}
